@@ -1,3 +1,4 @@
+HEAD
 # Library Management System using Python on Django Framework
 
 ### About the Project
@@ -96,3 +97,6 @@ Frontend: <code>[HTML](https://github.com/mrankitgupta)</code> & <code>[CSS](htt
 <a href="https://github.com/mrankitgupta/" target="blank"><img align="center" src="https://img.shields.io/github/followers/mrankitgupta?label=Follow&style=social&link=https://github.com/mrankitgupta/" alt="MrAnkitGupta" height="20" width="90" /></a>
 
   
+
+# Django-project
+8df5ac7378dbdfca13bbd001446176b639bf02e4
