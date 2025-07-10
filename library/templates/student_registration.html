@@ -9,6 +9,20 @@
         {% csrf_token %}
         <br>
         <h1 class="text-center"><u>Student Registration</u></h1>
+
+        <!-- ✅ Add messages block here -->
+        <div class="text-center mt-3">
+            {% if userexists %}
+                <p style="color: red; font-weight: bold;">Username already exists. Please choose another one.</p>
+            {% endif %}
+            {% if passnotmatch %}
+                <p style="color: red; font-weight: bold;">Passwords do not match. Please try again.</p>
+            {% endif %}
+            {% if alert %}
+                <p style="color: green; font-weight: bold;">Registration successful!</p>
+            {% endif %}
+        </div>
+
     <div class="row mt-4">
         <div class="form-group col-md-12">
             <label><i style="font-weight: bold;">Username</i></label>
@@ -77,9 +91,8 @@
 {% block js %}
 <script>
     {% if alert %}
-    alert("Registration Successfull.")
+    alert("Registration Successful.")
     document.location = "/student_login"
     {% endif %}
 </script>
 {% endblock %}
-
