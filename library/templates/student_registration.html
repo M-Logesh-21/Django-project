@@ -5,7 +5,8 @@
 {% endblock %}
 {% block body %}
 <div class="container">
-    <form method="POST" enctype="multipart/form-data"> {% csrf_token %}
+    <form method="POST" enctype="multipart/form-data"> 
+        {% csrf_token %}
         <br>
         <h1 class="text-center"><u>Student Registration</u></h1>
     <div class="row mt-4">
