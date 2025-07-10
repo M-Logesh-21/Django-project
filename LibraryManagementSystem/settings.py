@@ -14,7 +14,11 @@ SECRET_KEY = '(*h%h-rc^kh_ob18is3j+c6@*3b92&9p^%s2lf^qas^lk3*n_q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+HEAD
 ALLOWED_HOSTS = [django-project-1-yplt.onrender.com]
+
+ALLOWED_HOSTS = ['django-project-1-yplt.onrender.com']
+dc7e1c3 (Updated settings.py)
 
 
 # Application definition
