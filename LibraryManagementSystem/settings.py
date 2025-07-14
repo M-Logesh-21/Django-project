@@ -15,7 +15,7 @@ SECRET_KEY = '(*h%h-rc^kh_ob18is3j+c6@*3b92&9p^%s2lf^qas^lk3*n_q'
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['library-management-system-lbdo.onrender.com']
+ALLOWED_HOSTS = ['django-project-1b1n.onrender.com']
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 
@@ -123,5 +123,5 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://library-management-system-lbdo.onrender.com',
+    'django-project-1b1n.onrender.com',
 ]
