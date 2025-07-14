@@ -16,6 +16,8 @@ DEBUG = True
 
 
 ALLOWED_HOSTS = ['django-project-1-yplt.onrender.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+
 
 # Application definition
 
