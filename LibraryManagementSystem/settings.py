@@ -17,10 +17,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['django-project-1-yplt.onrender.com']
 
-ALLOWED_HOSTS = ['django-project-1-yplt.onrender.com']
-
-
-
 # Application definition
 
 INSTALLED_APPS = [
