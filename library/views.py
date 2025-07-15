@@ -188,14 +188,22 @@ def student_registration(request):
 
         if password != confirm_password:
             passnotmatch = True
-            return render(request, "student_registration.html", {'passnotmatch':passnotmatch})
+            return render(request, "student_registration.html", {'passnotmatch': passnotmatch})
 
-        user = User.objects.create_user(username=username, email=email, password=password,first_name=first_name, last_name=last_name)
-        student = Student.objects.create(user=user, phone=phone, branch=branch, classroom=classroom,roll_no=roll_no, image=image)
+      
+        if User.objects.filter(username=username).exists():
+            userexists = True
+            return render(request, "student_registration.html", {'userexists': userexists})
+
+        user = User.objects.create_user(username=username, email=email, password=password,
+                                        first_name=first_name, last_name=last_name)
+        student = Student.objects.create(user=user, phone=phone, branch=branch,
+                                         classroom=classroom, roll_no=roll_no, image=image)
         user.save()
         student.save()
         alert = True
-        return render(request, "student_registration.html", {'alert':alert})
+        return render(request, "student_registration.html", {'alert': alert})
+
     return render(request, "student_registration.html")
 
 def student_login(request):
