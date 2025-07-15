@@ -16,7 +16,7 @@ DEBUG = True
 
 import os
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'https://library-management-system-cbhc.onrender.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'library-management-system-cbhc.onrender.com']
 
 
 
