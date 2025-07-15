@@ -16,7 +16,7 @@ DEBUG = True
 
 import os
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'django-project-1-yplt.onrender.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'https://library-management-system-cbhc.onrender.com']
 
 
 
@@ -124,5 +124,5 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CSRF_TRUSTED_ORIGINS = [
-    'django-project-1b1n.onrender.com',
+    'https://library-management-system-cbhc.onrender.com',
 ]
